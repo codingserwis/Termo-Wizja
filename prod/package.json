@@ -9,10 +9,13 @@
   "author": "Maciej Lehrer <kontakt@codingserwis.pl> (http://codingserwis.pl/)",
   "license": "MIT",
   "devDependencies": {
+    "bootstrap": "^4.0.0-beta",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sourcemaps": "^2.6.1",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
   }
 }
