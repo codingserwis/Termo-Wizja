@@ -2,9 +2,15 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourceMaps = require('gulp-sourcemaps'),
     autoPrefixer = require('gulp-autoprefixer'),
+    imgMin = require('gulp-imagemin'),
     browserSync = require('browser-sync');
 
-
+// images optimalisation
+gulp.task('img', function() {
+	return gulp.src('./assets/img/*.*')
+		.pipe(imgMin())
+		.pipe(gulp.dest('../assets/img'));
+});
 
 // SASS compilation
 gulp.task('sass', function() {

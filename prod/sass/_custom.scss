@@ -1,5 +1,102 @@
+%section-bcg-left {
+    background-repeat: no-repeat;
+    background-position-x: -3.5rem;
+    background-position-y: 4rem;
+    background-size: 40%;
+}
+%section-bcg-right {
+    background-repeat: no-repeat;
+    background-position-x: 115%;
+    background-position-y: 4rem;
+    background-size: 50%;
+}
+.text-white {
+    color: $white;
+}
+
+.text-orange {
+    color: map-get($termo-colors, orange);
+}
+ul {
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+    }
+}
+
+header, 
+section, 
+footer {
+    width: 100%;
+}
+
+header {
+    &.header {
+        position: fixed;
+        top: 0;
+        background: transparent;
+    }
+    nav {
+        color: $white;
+    }
+}
+
 section {
     padding: 80px 0;
+    &.section-border {
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+
+    &.main-section-bcg {
+        background-image: url('../img/main-bcg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &.termovision-bcg {
+        background-image: url('../img/thermo-bcg-xl.png');
+        @extend %section-bcg-left;
+    }
+    &.electrict-bcg {
+        background-image: url('../img/electric-bcg.png');
+        @extend %section-bcg-right;
+    }
+    &.light-bcg {
+        background-image: url('../img/light-mes.png');
+        @extend %section-bcg-left;
+    }
+    &.alarm-systems {
+        background-image: url('../img/alarm-sys.png');
+        @extend %section-bcg-right;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    
+    &.footer {
+        background-color: map-get($termo-colors, footer-bcg);
+    }
+    .img {
+        width: 50%;
+        height: auto;
+    }
+
+    address {
+        color: $white;
+        
+        ul {
+            padding: 0;
+            li {
+                font-size: 1.250rem;
+                font-weight: 300;
+                display: block;
+            }
+        }
+    }
+
 }
 
 .section-main-title {
