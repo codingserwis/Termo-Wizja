@@ -111,6 +111,11 @@ $theme-colors: (
   dark: $gray-800
 ) !default;
 
+$termo-colors: (
+  footer-bcg: #00303f,
+  orange: #ff5a09
+);
+
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;
 
@@ -163,10 +168,10 @@ $body-color:    $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:            theme-color("primary") !default;
+$link-color:            $white;
 $link-decoration:       none !default;
-$link-hover-color:      darken($link-color, 15%) !default;
-$link-hover-decoration: underline !default;
+$link-hover-color:      map-get($termo-colors, orange);
+$link-hover-decoration: none;
 
 // Paragraphs
 //
