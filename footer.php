@@ -9,21 +9,15 @@
                             <h4 class="font-weight-light">
                                 Artur Maliszewski
                             </h4>
-                            <h4 class="font-weight-light">
-                                    Kępa ul. Miła 5
-                            </h4>
-                            <ul class="mt-3">
-                                <li>
-                                    <a href="">
-                                        <i></i>666 666 666
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                    <i></i> kontakt@gmail.com
-                                    </a>
-                                </li>
-                            </ul>
+                            <?php 
+                                $args = array( 'title' => 'Kontakt - stopka strony' );
+
+                                $loop = new WP_Query($args);
+                                while($loop -> have_posts()) : $loop -> the_post();
+                                    get_template_part('template-parts/page', 'kontakt_part');
+                                endwhile;
+                                wp_reset_postdata();
+                            ?> 
                         </address>
                     </div>
                     <div class="col-xl-6 d-flex justify-content-end align-items-start">

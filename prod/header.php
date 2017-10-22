@@ -8,21 +8,20 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header class="header">
+    <?php echo '<header class="' . (is_page_template( 'prod/home.php' ) ? 'header' : 'header white') . '">'; ?>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <nav>
-                        <ul>
-                            <li>Home</li>
-                            <li>Termowizja</li>
-                            <li>Pomiary elektryczne</li>
-                            <li>Pomiary światła</li>
-                            <li>Alarmy</li>
-                            <li>Cenniki</li>
-                            <li>Kontakt</li>
-                        </ul>
-                    </nav>
+                        <?php 
+                            wp_nav_menu( array(
+                                'menu' => 'header_menu',
+                                'theme_location' => 'header_menu',
+                                'menu_id' => 'main-menu',
+                                'container' => 'nav',
+                                'container_class' => 'main-navbar',
+                                'menu_class' => 'menu'
+                            ));
+                        ?>
                 </div>
             </div>
         </div>
