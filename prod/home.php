@@ -30,7 +30,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xl-12">
-                            666 666 666
+                            <?php the_field('address_phone'); ?>
                         </div>
                     </div>
                 </div>
@@ -68,6 +68,11 @@
                                 <?php the_field('termovision_link'); ?>
                             </h2>
                         </div>
+                        <div class="col-xl-12 d-flex justify-content-end">
+                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange">
+                                <span>Sprawdź</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,15 +88,24 @@
                                 <?php the_field('electric_title'); ?>
                             </h1>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-xl-12">
                             <p class="my-4 section-content">
                                 <?php the_field('electric_content'); ?>
                             </p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-xl-12">
                             <h2 class="section-link font-weight-light">
                                 <?php the_field('electric_link'); ?>
                             </h2>
+                        </div>
+                        <div class="col-xl-12 d-flex justify-content-end">
+                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange">
+                                <span>Sprawdź</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -108,15 +122,24 @@
                                 <?php the_field('light_title'); ?>
                             </h1>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-xl-12">
                             <p class="my-4 section-content">
                                 <?php the_field('light_content'); ?>
                             </p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-xl-12">
                             <h2 class="section-link font-weight-light">
                                 <?php the_field('light_link'); ?>
                             </h2>
+                        </div>
+                        <div class="col-xl-12 d-flex justify-content-end">
+                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange">
+                                <span>Sprawdź</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -133,15 +156,24 @@
                                     <?php the_field('security_title'); ?>
                                 </h1>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-xl-12">
                                 <p class="my-4 section-content">
                                     <?php the_field('security_content'); ?>
                                 </p>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-xl-12">
                                 <h2 class="section-link font-weight-light">
                                     <?php the_field('security_link'); ?>
                                 </h2>
+                            </div>
+                            <div class="col-xl-12 d-flex justify-content-end">
+                                <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange">
+                                    <span>Sprawdź</span>
+                                </a>
                             </div>
                         </div>
                     </div>

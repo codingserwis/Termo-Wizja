@@ -48,6 +48,11 @@
 //
 // Color system
 //
+// Custom theme colors 
+$termo-colors: (
+  footer-bcg: #00303f,
+  orange: #ff5a09
+);
 
 $white:  #fff !default;
 $gray-100: #f8f9fa !default;
@@ -78,7 +83,7 @@ $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
+$orange:  map-get($termo-colors, orange);
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
@@ -98,10 +103,10 @@ $colors: (
   white: $white,
   gray: $gray-600,
   gray-dark: $gray-800
-) !default;
+);
 
 $theme-colors: (
-  primary: $blue,
+  primary: $orange,
   secondary: $gray-600,
   success: $green,
   info: $cyan,
@@ -109,11 +114,6 @@ $theme-colors: (
   danger: $red,
   light: $gray-100,
   dark: $gray-800
-) !default;
-
-$termo-colors: (
-  footer-bcg: #00303f,
-  orange: #ff5a09
 );
 
 // Set a specific jump point for requesting color jumps
@@ -246,7 +246,8 @@ $transition-collapse:    height .35s ease !default;
 
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-monospace:  "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       'Lato', $font-family-sans-serif;
+$font-family-base:       'Raleway', $font-family-sans-serif;
+$font-heding-family: 'Lato', $font-family-sans-serif;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.25rem !default;
