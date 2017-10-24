@@ -4,12 +4,18 @@
     background-position-y: 4rem;
     background-size: 40%;
 }
+
 %section-bcg-right {
     background-repeat: no-repeat;
     background-position-x: 115%;
     background-position-y: 4rem;
     background-size: 50%;
 }
+
+.text-light {
+    font-weight: 200;
+}
+
 h1,
 h2,
 h3,
@@ -86,44 +92,103 @@ section {
 
     &.main-section-bcg {
         position: relative;
+        z-index: 0;
         background-color: #00303f;
-        .container {
             &:before {
                 position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -11;
                 width: 100%;
                 height: 100%;
                 content: "";
                 background-image: url('../img/patern.png');
+            }
+            &:after {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 40%;
+                height: 85%;
+                z-index: -10;
+                content: "";
+                background-image: url('../img/main-termo-bcg.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        
+        .hero-heading-fline {
+            font-size: 5rem;
+            font-weight: 100;
+        }
+
+        .hero-heading-sline {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: .750rem;
+            line-height: 4rem;
+        }
+
+        .hero-heading-tline {
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+
+        .hero-contact {
+            font-family: $font-heding-family;
+            color: $white;
+            font-size: 2.225rem;
+            line-height: 2rem;
+        }
+
+        .hero-phone {
+            font-family: $font-heding-family;
+            font-size: 2.5rem;
+            font-weight: 800;
+
+            i {
+                width: 60px;
+                height: 60px;
+                padding: 10px;
+                text-align: center;
+                background-color: $white;
+                border-radius: 50%;
+                color: map-get($termo-colors, orange);
             }
         }
     }
 
     &.termovision-bcg {
         background-image: url('../img/thermo-bcg-xl.png');
+        background-color: $white;
         @extend %section-bcg-left;
     }
+
     &.electrict-bcg {
         background-image: url('../img/electric-bcg.png');
         @extend %section-bcg-right;
     }
+
     &.light-bcg {
         background-image: url('../img/light-mes.png');
         @extend %section-bcg-left;
     }
+
     &.alarm-systems {
         background-image: url('../img/alarm-sys.png');
         @extend %section-bcg-right;
     }
+
     &.contact {
         padding: 10rem;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
-}
 
-.main-page-link {
+    &.basic-section {
 
+    }
 }
 
 footer {
@@ -163,4 +228,10 @@ footer {
 
 .section-link {
     font-size: 2.5rem;
+}
+
+.page-content {
+    p {
+        line-height: 1.750rem;
+    }
 }

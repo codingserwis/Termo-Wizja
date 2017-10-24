@@ -6,38 +6,38 @@
 
 ?>
 <main>
-    <section class="main-section-bcg" style="min-height: 75vh; height: 75vh;">
+    <section class="main-section-bcg">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7">
+                <div class="col-xl-7 py-5">
                     <div class="row">
                         <div class="col-xl-12">
-                            <h1 class="text-uppercase text-white">
+                            <h1 class="hero-heading-fline text-uppercase text-white m-0">
                                 profesjonalne
                             </h1>
-                            <h1 class="text-uppercase text-orange">
+                            <h1 class="hero-heading-sline text-uppercase text-orange m-0">
                                 badania
                             </h1>
-                            <h1 class="text-uppercase text-orange font-weight-bold">
+                            <h1 class="hero-heading-tline text-uppercase text-orange font-weight-bold">
                                 <strong>termowizyjne</strong>
                             </h1>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            zadzwoń zapytaj o wycenę
+                    <div class="row mt-4 ml-3">
+                        <div class="col-auto">
+                            <p class="hero-contact text-uppercase m-0">
+                                <strong>zadzwoń</strong>  
+                            </p>
+                            <p class="hero-contact text-uppercase m-0 text-light">
+                                zapytaj o wycenę
+                            </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12">
-                            <?php the_field('address_phone'); ?>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <img class="img-fluid" src="localhost:3000/WP-4_8_1/wp-content/themes/TermoWizja/assets/img/main-termo-bcg.png" alt="">
+                        <div class="col-auto mt-3">
+                            <a href="tel:<?php echo str_replace(' ', '', get_field('fast_contact_phone')); ?>" class="hero-phone btn btn-primary badge badge-pill py-3 px-4 d-flex align-items-center">
+                                <i class="fa fa-phone fa-rotate-90 mr-2"></i><?php the_field('fast_contact_phone'); ?>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                             </h2>
                         </div>
                         <div class="col-xl-12 d-flex justify-content-end">
-                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange">
+                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>
                         </div>
@@ -103,7 +103,7 @@
                             </h2>
                         </div>
                         <div class="col-xl-12 d-flex justify-content-end">
-                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange">
+                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>
                         </div>
@@ -137,7 +137,7 @@
                             </h2>
                         </div>
                         <div class="col-xl-12 d-flex justify-content-end">
-                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange">
+                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>
                         </div>
@@ -171,7 +171,7 @@
                                 </h2>
                             </div>
                             <div class="col-xl-12 d-flex justify-content-end">
-                                <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange">
+                                <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                     <span>Sprawdź</span>
                                 </a>
                             </div>
