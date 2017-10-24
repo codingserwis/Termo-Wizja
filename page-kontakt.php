@@ -5,7 +5,7 @@
     get_header();
 
 ?>
-    <section>
+    <section class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
