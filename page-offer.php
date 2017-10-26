@@ -38,6 +38,15 @@
                     </div>
                 </div>
             </div>
+            <div class="row mt-4">
+                <div class="col-xl-12">
+                    <div class="row justify-content-end">
+                        <div class="col-auto">
+                            <a href="<?php bloginfo('url'); ?>" class="hero-phone btn btn-primary badge badge-pill py-3 px-4 d-flex align-items-center text-uppercase">wróć</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section><!-- end of section -->
 

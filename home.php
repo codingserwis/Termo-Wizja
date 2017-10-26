@@ -69,7 +69,7 @@
                             </h2>
                         </div>
                         <div class="col-xl-12 d-flex justify-content-end">
-                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
+                            <a href="<?php echo bloginfo('url') . '/termowizja'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>
                         </div>
@@ -103,7 +103,7 @@
                             </h2>
                         </div>
                         <div class="col-xl-12 d-flex justify-content-end">
-                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
+                            <a href="<?php echo bloginfo('url') . '/pomiary-elektryczne/'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>
                         </div>
@@ -137,7 +137,7 @@
                             </h2>
                         </div>
                         <div class="col-xl-12 d-flex justify-content-end">
-                            <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
+                            <a href="<?php echo bloginfo('url') . '/pomiary-oswietlenia/'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>
                         </div>
@@ -171,7 +171,7 @@
                                 </h2>
                             </div>
                             <div class="col-xl-12 d-flex justify-content-end">
-                                <a href="" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
+                                <a href="<?php echo bloginfo('url') . '/systemy-alarmowe/'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                     <span>Sprawdź</span>
                                 </a>
                             </div>
