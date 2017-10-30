@@ -1,8 +1,13 @@
 %section-bcg-left {
     background-repeat: no-repeat;
-    background-position-x: -3.5rem;
-    background-position-y: 4rem;
+    background-position-x: 50%;
+    background-position-y: 2rem;
     background-size: 40%;
+    @include for-sm {
+        background-position-x: -7rem;
+        background-position-y: 5rem;
+        
+    }
 }
 
 %section-bcg-right {
