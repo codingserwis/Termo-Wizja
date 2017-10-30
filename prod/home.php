@@ -43,27 +43,27 @@
                 </div>
             </div>
         </div>
-    </section> <!-- end of main section 
+    </section> <!-- end of main section -->
     <section class="section-border termovision-bcg">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-xl-7">
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <h1 class="section-main-title font-weight-light">
                                 <?php the_field('termovision_title'); ?>
                             </h1>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <p class="my-4 section-content">
                                 <?php the_field('termovision_content'); ?>
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <h2 class="section-link font-weight-light">
                                 <?php the_field('termovision_link'); ?>
                             </h2>
@@ -77,32 +77,32 @@
                 </div>
             </div>
         </div>
-    </section>  end of termovision section
+    </section>  <!-- end of termovision section -->
     <section class="electrict-bcg section-border">
         <div class="container">
-            <div class="row justify-content-start">
-                <div class="col-xl-7">
+            <div class="row rwd-margin">
+                <div class="col-12 col-sm-10 col-md-8 col-xl-7">
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <h1 class="section-main-title font-weight-light">
                                 <?php the_field('electric_title'); ?>
                             </h1>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <p class="my-4 section-content">
                                 <?php the_field('electric_content'); ?>
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <h2 class="section-link font-weight-light">
                                 <?php the_field('electric_link'); ?>
                             </h2>
                         </div>
-                        <div class="col-xl-12 d-flex justify-content-end">
+                        <div class="col-12 d-flex justify-content-center justify-content-sm-end">
                             <a href="<?php echo bloginfo('url') . '/pomiary-elektryczne/'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>
@@ -111,32 +111,32 @@
                 </div>
             </div>
         </div>
-    </section>  end of electrical section
+    </section>  <!-- end of electrical section -->
     <section class="light-bcg section-border">
         <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-xl-7">
+            <div class="row rwd-margin justify-content-sm-end">
+                <div class="col-12 col-sm-10 col-md-8 col-xl-7">
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <h1 class="section-main-title font-weight-light">
                                 <?php the_field('light_title'); ?>
                             </h1>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <p class="my-4 section-content">
                                 <?php the_field('light_content'); ?>
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <h2 class="section-link font-weight-light">
                                 <?php the_field('light_link'); ?>
                             </h2>
                         </div>
-                        <div class="col-xl-12 d-flex justify-content-end">
+                        <div class="col-12 d-flex justify-content-center justify-content-sm-end">
                             <a href="<?php echo bloginfo('url') . '/pomiary-oswietlenia/'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>
@@ -145,32 +145,32 @@
                 </div>
             </div>
         </div>
-    </section>  end of light mesurment section -->
+    </section>  <!-- end of light mesurment section -->
     <section class="alarm-systems section-border">
         <div class="container">
             <div class="row rwd-margin">
                 <div class="col-12 col-sm-10 col-md-8 col-xl-7">
                     <div class="row">
-                        <div class="col-12 col-xl-12">
+                        <div class="col-12">
                             <h1 class="section-main-title font-weight-light">
                                 <?php the_field('security_title'); ?>
                             </h1>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-xl-12">
+                        <div class="col-12">
                             <p class="my-4 section-content">
                                 <?php the_field('security_content'); ?>
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-xl-12">
+                        <div class="col-12">
                             <h2 class="section-link font-weight-light">
                                 <?php the_field('security_link'); ?>
                             </h2>
                         </div>
-                        <div class="col-12 col-xl-12 d-flex justify-content-center justify-content-sm-end">
+                        <div class="col-12 d-flex justify-content-center justify-content-sm-end">
                             <a href="<?php echo bloginfo('url') . '/systemy-alarmowe/'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>
