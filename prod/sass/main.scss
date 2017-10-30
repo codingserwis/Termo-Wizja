@@ -3,6 +3,7 @@
 @import "../node_modules/bootstrap/scss/variables";
 // Custom variables
 @import './variables';
+@import './_mixins';
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/print";
 @import "../node_modules/bootstrap/scss/reboot";

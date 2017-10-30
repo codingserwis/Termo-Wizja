@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+    xs: 0
+    sm: 576px
+    md: 768px
+    lg: 992px
+    xl: 1200px
+--------------------------------------------------------------*/
+@mixin for-phone-landscape {
+    @media (max-width: map-get($grid-breakpoints, sm)) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin for-sm {
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        @content;
+    }
+}
+
+@mixin for-md {
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        @content;
+    }
+}
+
+@mixin for-xl {
+    @media (min-width: map-get($grid-breakpoints, xl)) {
+        @content;
+    }
+}
