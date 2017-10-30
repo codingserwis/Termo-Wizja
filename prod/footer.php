@@ -1,7 +1,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-12 col-sm-8 col-md-7 col-xl-6">
                         <address>
                             <h1 class="font-weight-light">
                                 Pomiary elektryczne i termowizyjne
@@ -20,8 +20,8 @@
                             ?> 
                         </address>
                     </div>
-                    <div class="col-xl-6 d-flex justify-content-end align-items-start">
-                        <img class="img" src="http://localhost:3000/WP-4_8_1/wp-content/themes/TermoWizja/assets/img/home.svg" alt="">
+                    <div class="d-none d-sm-flex col-sm-3 col-md-3 justify-content-end align-items-start ml-auto">
+                        <img class="img-fluid" src="http://localhost:3000/WP-4_8_1/wp-content/themes/TermoWizja/assets/img/home.svg" alt="">
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
 
 ?>
 <main>
-    <section class="main-section-bcg">
+   <!-- <section class="main-section-bcg">
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 py-5">
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- end of main section 
     <section class="section-border termovision-bcg">
         <div class="container">
             <div class="row justify-content-end">
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-    </section> <!-- end of termovision section -->
+    </section>  end of termovision section
     <section class="electrict-bcg section-border">
         <div class="container">
             <div class="row justify-content-start">
@@ -111,7 +111,7 @@
                 </div>
             </div>
         </div>
-    </section> <!-- end of electrical section -->
+    </section>  end of electrical section
     <section class="light-bcg section-border">
         <div class="container">
             <div class="row justify-content-end">
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </div>
-    </section> <!-- end of light mesurment section-->
+    </section>  end of light mesurment section
     <section class="alarm-systems section-border">
         <div class="container">
                 <div class="row">

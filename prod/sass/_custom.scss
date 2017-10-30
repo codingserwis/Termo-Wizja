@@ -206,10 +206,6 @@ footer {
     &.footer {
         background-color: map-get($termo-colors, footer-bcg);
     }
-    .img {
-        width: 50%;
-        height: auto;
-    }
 
     address {
         font-family: $font-heding-family;
