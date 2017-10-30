@@ -131,6 +131,7 @@ section {
                 background-image: url('../img/patern.png');
             }
             &:after {
+                display: none;
                 position: absolute;
                 bottom: 0;
                 right: 0;
@@ -141,29 +142,38 @@ section {
                 background-image: url('../img/main-termo-bcg.png');
                 background-repeat: no-repeat;
                 background-size: cover;
+                @include for-md {
+                    display: block;
+                }
             }
         
         .hero-heading-fline {
             font-size: 2.5rem;
-            // font-size: 5rem;
             font-weight: 100;
+            @include for-xl {
+                font-size: 5rem;
+            }
         }
 
         .hero-heading-sline {
             font-size: 2.5rem;
             letter-spacing: .25rem;
             line-height: 2.5rem;
-            // font-size: 4rem;
             font-weight: 300;
-            // letter-spacing: .750rem;
-            // line-height: 4rem;
+            @include for-xl {
+                font-size: 4rem;
+                letter-spacing: .750rem;
+                line-height: 4rem;
+            }
         }
 
         .hero-heading-tline {
             font-size: 2.5rem;
             line-height: 2.5rem;
-            // font-size: 5rem;
-            // line-height: 5rem;
+            @include for-xl {
+                font-size: 5rem;
+                line-height: 5rem;
+            }
         }
 
         .hero-contact {
@@ -176,20 +186,24 @@ section {
         .hero-phone {
             font-family: $font-heding-family;
             font-size: 1.750rem;
-            // font-size: 2.5rem;
             font-weight: 800;
+            @include for-xl {
+                font-size: 2.5rem;
+            }
 
             i {
                 width: 35px;
                 height: 35px;
                 padding: 5px;
-                // width: 60px;
-                // height: 60px;
-                // padding: 10px;
                 text-align: center;
                 background-color: $white;
                 border-radius: 50%;
                 color: map-get($termo-colors, orange);
+                @include for-xl {
+                    width: 60px;
+                    height: 60px;
+                    padding: 10px;
+                }
             }
         }
     }
