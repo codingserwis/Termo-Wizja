@@ -6,12 +6,12 @@
 
 ?>
 <main>
-   <!-- <section class="main-section-bcg">
+    <section class="main-section-bcg">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7 py-5">
+                <div class="col-12 col-xl-7 py-5">
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <h1 class="hero-heading-fline text-uppercase text-white m-0">
                                 profesjonalne
                             </h1>
