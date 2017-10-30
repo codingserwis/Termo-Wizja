@@ -46,8 +46,8 @@
     </section> <!-- end of main section -->
     <section class="section-border termovision-bcg">
         <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-xl-7">
+            <div class="row rwd-margin justify-content-sm-end">
+                <div class="col-12 col-sm-10 col-md-8 col-xl-7">
                     <div class="row">
                         <div class="col-12">
                             <h1 class="section-main-title font-weight-light">
@@ -68,7 +68,7 @@
                                 <?php the_field('termovision_link'); ?>
                             </h2>
                         </div>
-                        <div class="col-xl-12 d-flex justify-content-end">
+                        <div class="col-xl-12 d-flex justify-content-center justify-content-sm-end">
                             <a href="<?php echo bloginfo('url') . '/termowizja'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
                                 <span>Sprawdź</span>
                             </a>

@@ -144,20 +144,26 @@ section {
             }
         
         .hero-heading-fline {
-            font-size: 5rem;
+            font-size: 2.5rem;
+            // font-size: 5rem;
             font-weight: 100;
         }
 
         .hero-heading-sline {
-            font-size: 4rem;
+            font-size: 2.5rem;
+            letter-spacing: .25rem;
+            line-height: 2.5rem;
+            // font-size: 4rem;
             font-weight: 300;
-            letter-spacing: .750rem;
-            line-height: 4rem;
+            // letter-spacing: .750rem;
+            // line-height: 4rem;
         }
 
         .hero-heading-tline {
-            font-size: 5rem;
-            line-height: 5rem;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            // font-size: 5rem;
+            // line-height: 5rem;
         }
 
         .hero-contact {
@@ -169,13 +175,17 @@ section {
 
         .hero-phone {
             font-family: $font-heding-family;
-            font-size: 2.5rem;
+            font-size: 1.750rem;
+            // font-size: 2.5rem;
             font-weight: 800;
 
             i {
-                width: 60px;
-                height: 60px;
-                padding: 10px;
+                width: 35px;
+                height: 35px;
+                padding: 5px;
+                // width: 60px;
+                // height: 60px;
+                // padding: 10px;
                 text-align: center;
                 background-color: $white;
                 border-radius: 50%;
