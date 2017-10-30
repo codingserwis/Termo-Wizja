@@ -145,40 +145,40 @@
                 </div>
             </div>
         </div>
-    </section>  end of light mesurment section
+    </section>  end of light mesurment section -->
     <section class="alarm-systems section-border">
         <div class="container">
-                <div class="row">
-                    <div class="col-xl-7">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <h1 class="section-main-title font-weight-light">
-                                    <?php the_field('security_title'); ?>
-                                </h1>
-                            </div>
+            <div class="row rwd-margin">
+                <div class="col-12 col-sm-10 col-md-8 col-xl-7">
+                    <div class="row">
+                        <div class="col-12 col-xl-12">
+                            <h1 class="section-main-title font-weight-light">
+                                <?php the_field('security_title'); ?>
+                            </h1>
                         </div>
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <p class="my-4 section-content">
-                                    <?php the_field('security_content'); ?>
-                                </p>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-12">
+                            <p class="my-4 section-content">
+                                <?php the_field('security_content'); ?>
+                            </p>
                         </div>
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <h2 class="section-link font-weight-light">
-                                    <?php the_field('security_link'); ?>
-                                </h2>
-                            </div>
-                            <div class="col-xl-12 d-flex justify-content-end">
-                                <a href="<?php echo bloginfo('url') . '/systemy-alarmowe/'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
-                                    <span>Sprawdź</span>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-12">
+                            <h2 class="section-link font-weight-light">
+                                <?php the_field('security_link'); ?>
+                            </h2>
+                        </div>
+                        <div class="col-12 col-xl-12 d-flex justify-content-center justify-content-sm-end">
+                            <a href="<?php echo bloginfo('url') . '/systemy-alarmowe/'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
+                                <span>Sprawdź</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section> <!-- end of alarms section -->
 </main>
 

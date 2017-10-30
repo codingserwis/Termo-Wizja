@@ -7,9 +7,30 @@
 
 %section-bcg-right {
     background-repeat: no-repeat;
-    background-position-x: 115%;
-    background-position-y: 4rem;
+    background-position-x: 50%;
+    background-position-y: 2rem;
     background-size: 50%;
+    @include for-sm {
+        background-position-x: 140%;   
+        background-position-y: 35%;     
+    }
+    @include for-md {
+        background-position-x: 130%;           
+    }
+    @include for-xl {
+        background-position-x: 115%;
+        background-position-y: 4rem;
+    }
+}
+
+.rwd-margin {
+    margin-top: 7.5rem;
+    @include for-phone-landscape {
+        margin-top: 12rem;
+    }
+    @include for-sm {
+        margin-top: 0;
+    }
 }
 
 .text-light {
@@ -224,15 +245,26 @@ footer {
 }
 
 .section-main-title {
-    font-size: 4rem;
+    font-size: 2.125rem;
+    @include for-xl {
+        font-size: 4rem;
+    }
 }
 
 .section-content {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    @include for-xl {
+        font-size: 1.5rem;
+        line-height: 2.250rem;
+    }
 }
 
 .section-link {
-    font-size: 2.5rem;
+    font-size: 1.750rem;
+    @include for-xl {
+        font-size: 2.5rem;
+    }
 }
 
 .page-content {
