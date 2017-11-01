@@ -23,7 +23,7 @@
                             </h1>
                         </div>
                     </div>
-                    <div class="row mt-4 ml-3">
+                    <div class="row mt-2">
                         <div class="col-auto">
                             <p class="hero-contact text-uppercase m-0">
                                 <strong>zadzwoń</strong>  
