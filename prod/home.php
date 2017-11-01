@@ -35,7 +35,7 @@
                     </div>
                     <div class="row">
                         <div class="col-auto mt-3">
-                            <a href="tel:<?php echo str_replace(' ', '', get_field('fast_contact_phone')); ?>" class="hero-phone btn btn-primary badge badge-pill py-3 px-4 d-flex align-items-center">
+                            <a href="tel:<?php echo str_replace(' ', '', get_field('fast_contact_phone')); ?>" class="hero-phone btn btn-primary badge badge-pill py-3 px-4 d-flex align-items-center" id="tel-link">
                                 <i class="fa fa-phone fa-rotate-90 mr-2"></i><?php the_field('fast_contact_phone'); ?>
                             </a>
                         </div>

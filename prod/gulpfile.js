@@ -3,7 +3,9 @@ var gulp = require('gulp'),
     sourceMaps = require('gulp-sourcemaps'),
     autoPrefixer = require('gulp-autoprefixer'),
     imgMin = require('gulp-imagemin'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    typeScript = require('gulp-typescript'),
+    tsProject = typeScript.createProject('tsconfig.json');
 
 // images optimalisation
 gulp.task('img', function() {
@@ -41,10 +43,20 @@ gulp.task('php-copy', function() {
         .pipe(browserSync.stream());
 });
 
+//TS
+gulp.task('ts', function() {
+    var tsResult = gulp.src('./ts/**/*.ts')
+        .pipe(tsProject())
+       
+        return tsResult.js.pipe(gulp.dest('../assets/js'))
+                .pipe(browserSync.stream());
+});
+
 // Gulp watch files
 gulp.task('watch', ['sass', 'browser-sync'], function() {
     gulp.watch('sass/**/*.scss', ['sass']);
     gulp.watch('./**/*.php', ['php-copy']);
+    gulp.watch('./ts/**/*.ts', ['ts']);
 });
 
 // Gulp default

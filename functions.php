@@ -10,6 +10,7 @@ function load_styles_and_scripts() {
     $styleVersion = filemtime( get_template_directory() . '/assets/css/main.css' );
     
     wp_enqueue_script( 'fa', 'https://use.fontawesome.com/b1f95d1c43.js', array(), false );
+    wp_enqueue_script( 'app', get_template_directory_uri() . '/assets/js/app.js', array(), false, true );
 
     wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Lato:100,300,400|Raleway&amp;subset=latin-ext', array(), null );
     wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', array(), $styleVersion, 'all');
