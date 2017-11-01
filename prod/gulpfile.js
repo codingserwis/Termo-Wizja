@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     imgMin = require('gulp-imagemin'),
     browserSync = require('browser-sync'),
     typeScript = require('gulp-typescript'),
-    tsProject = typeScript.createProject('tsconfig.json');
+    tsProject = typeScript.createProject('tsconfig.json'),
+    uglify = require('gulp-uglify');
 
 // images optimalisation
 gulp.task('img', function() {
@@ -48,7 +49,9 @@ gulp.task('ts', function() {
     var tsResult = gulp.src('./ts/**/*.ts')
         .pipe(tsProject())
        
-        return tsResult.js.pipe(gulp.dest('../assets/js'))
+        return tsResult.js
+                .pipe(uglify())
+                .pipe(gulp.dest('../assets/js'))
                 .pipe(browserSync.stream());
 });
 
