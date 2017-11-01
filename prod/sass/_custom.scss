@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
++++ Extends +++
+--------------------------------------------------------------*/
 %section-bcg-left {
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -28,6 +31,17 @@
     }
 }
 
+/*--------------------------------------------------------------
++++ Animations +++
+--------------------------------------------------------------*/
+.shake-top {
+	-webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+/*--------------------------------------------------------------
++++ Helpers +++
+--------------------------------------------------------------*/
 .rwd-margin {
     margin-top: 7.5rem;
     @include for-phone-landscape {
@@ -42,12 +56,16 @@
     font-weight: 200;
 }
 
+/*--------------------------------------------------------------
++++ General +++
+--------------------------------------------------------------*/
 h1,
 h2,
 h3,
 h4 {
     font-family: $font-heding-family;
 }
+
 .text-white {
     color: $white;
 }
@@ -55,6 +73,7 @@ h4 {
 .text-orange {
     color: map-get($termo-colors, orange);
 }
+
 ul {
     list-style-type: none;
 
@@ -69,12 +88,25 @@ footer {
     width: 100%;
 }
 
+/*--------------------------------------------------------------
++++ Mobile menu +++
+--------------------------------------------------------------*/
+.cbp-spmenu {
+    ul {
+        li {
+            width: 100%;
+        }
+    }
+}
+/*--------------------------------------------------------------
++++ Header and Navigation +++
+--------------------------------------------------------------*/
 header {
-    &.header {
-        position: fixed;
-        top: 0;
-        z-index: 9999;
-        padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    padding: 1.5rem 0;
+    &.main-header {
         background: rgba($black, 0.3);
         &.white {
             background-color: $white;
@@ -85,6 +117,15 @@ header {
             }
         }
     }
+    &.white-bcg-header {
+        background-color: $white;
+        border-bottom: 1px solid map-get($termo-colors, orange);
+        box-shadow: 0px 3px 15px 0px rgba($black, 0.1);
+        a {
+            color: $orange;
+        }
+    }
+
     nav {
         color: $white;
 
@@ -93,6 +134,7 @@ header {
             justify-content: flex-end;
             margin: 0;
         }
+
         .menu-item {
             margin-left: 1.250rem;
                 a {
@@ -130,6 +172,7 @@ section {
                 content: "";
                 background-image: url('../img/patern.png');
             }
+
             &:after {
                 display: none;
                 position: absolute;
@@ -148,44 +191,69 @@ section {
             }
         
         .hero-heading-fline {
-            font-size: 2.5rem;
-            font-weight: 100;
+            font-size: 2.2rem;
+            font-weight: 300;
+            @include for-md {
+                font-size: 3.0rem;
+            }
+            @include for-lg {
+                font-size: 4.0rem;
+                font-weight: 100;
+            }
+
             @include for-xl {
-                font-size: 5rem;
+                font-size: 5.0rem;
             }
         }
 
         .hero-heading-sline {
-            font-size: 2.5rem;
+            font-size: 2.0rem;
             letter-spacing: .25rem;
-            line-height: 2.5rem;
+            line-height: 2.0rem;
             font-weight: 300;
+            @include for-md {
+                font-size: 3.0rem;
+                line-height: 3.0rem;
+            }
+
+            @include for-lg {
+                font-size: 4.0rem;
+                line-height: 4.0rem;
+            }
+
             @include for-xl {
-                font-size: 4rem;
                 letter-spacing: .750rem;
-                line-height: 4rem;
             }
         }
 
         .hero-heading-tline {
-            font-size: 2.5rem;
-            line-height: 2.5rem;
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+            @include for-md {
+                font-size: 3.0rem;
+                line-height: 3.0rem;
+            }
+            @include for-lg {
+                font-size: 4.0rem;
+                line-height: 4.0rem;
+            }
+
             @include for-xl {
-                font-size: 5rem;
-                line-height: 5rem;
+                font-size: 5.0rem;
+                line-height: 5.0rem;
             }
         }
 
         .hero-contact {
             font-family: $font-heding-family;
             color: $white;
-            font-size: 2.225rem;
-            line-height: 2rem;
+            font-size: 1.9rem;
+            line-height: 1.9rem;
         }
 
         .hero-phone {
             font-family: $font-heding-family;
-            font-size: 1.750rem;
+            font-size: 1.500rem;
             font-weight: 800;
             @include for-xl {
                 font-size: 2.5rem;
@@ -243,7 +311,6 @@ section {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
     }
 
     &.basic-section {
@@ -253,7 +320,6 @@ section {
 
 footer {
     padding: 50px 0;
-    
     &.footer {
         background-color: map-get($termo-colors, footer-bcg);
     }
@@ -265,7 +331,7 @@ footer {
         ul {
             padding: 0;
             li {
-                font-size: 1.250rem;
+                font-size: 1.225rem;
                 font-weight: 300;
                 display: block;
             }
@@ -301,9 +367,4 @@ footer {
     p {
         line-height: 1.750rem;
     }
-}
-
-.shake-top {
-	-webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }

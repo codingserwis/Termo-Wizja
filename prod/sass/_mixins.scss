@@ -23,6 +23,12 @@
     }
 }
 
+@mixin for-lg {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        @content;
+    }
+}
+
 @mixin for-xl {
     @media (min-width: map-get($grid-breakpoints, xl)) {
         @content;

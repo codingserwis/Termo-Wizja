@@ -21,7 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPSSSQ8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <?php echo '<header class="' . (is_page_template( 'home.php' ) ? 'header' : 'header white') . '">'; ?>
+    <?php echo '<header id="nav-header" class="' . (is_page_template( 'home.php' ) ? 'main-header' : 'white-bcg-header') . '">'; ?>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">

@@ -35,9 +35,9 @@
                                 </a>
                             <?php else : ?>
                                 <h4>
-                                    W celu uzyskania cennika skontaktuje się z nami telefonicznie.
+                                    W celu uzyskania cennika skontaktuj się z nami telefonicznie.
                                 </h4>
-                                <div class="col-3 mt-3">
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-3">
                                     <?php get_template_part( 'template-parts/phone-button' ); ?>
                                 </div>
                             <?php endif; ?>
