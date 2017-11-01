@@ -24,6 +24,11 @@
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/home.svg" alt="">
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a href="http://www.codingserwis.pl"><small class="text-muted">www.CodingSerwis.pl</small></a>
+                    </div>
+                </div>
             </div>
             <?php wp_footer(); ?>
         </footer> <!-- end of footer -->
