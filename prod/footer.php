@@ -21,7 +21,7 @@
                         </address>
                     </div>
                     <div class="d-none d-sm-flex col-sm-3 col-md-3 justify-content-end align-items-start ml-auto">
-                        <img class="img-fluid" src="http://localhost:3000/WP-4_8_1/wp-content/themes/TermoWizja/assets/img/home.svg" alt="">
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/home.svg" alt="">
                     </div>
                 </div>
             </div>
