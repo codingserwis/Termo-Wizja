@@ -27,7 +27,7 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row no-gutters">
                         <div class="col-12 col-xl-8">
                             <?php if( get_field('service_pricelist')) : ?>
                                 <a href="<?php the_field('service_pricelist'); ?>" target="_blank" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
@@ -37,8 +37,10 @@
                                 <h4>
                                     W celu uzyskania cennika skontaktuj się z nami telefonicznie.
                                 </h4>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-3">
-                                    <?php get_template_part( 'template-parts/phone-button' ); ?>
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 mt-3">
+                                        <?php get_template_part( 'template-parts/phone-button' ); ?>
+                                    </div>
                                 </div>
                             <?php endif; ?>
                         </div>

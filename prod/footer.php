@@ -26,6 +26,9 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-auto">
+                        <small class="text-muted">&copy; elektro-instalacje.opole.pl - <?php echo date(Y);?></small>
+                    </div>
+                    <div class="col-auto">
                         <a href="http://www.codingserwis.pl"><small class="text-muted">www.CodingSerwis.pl</small></a>
                     </div>
                 </div>
