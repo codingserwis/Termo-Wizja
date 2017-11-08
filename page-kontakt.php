@@ -29,6 +29,11 @@
                             <span><?php the_field('main_address_city'); ?></span> <span>ul. <?php the_field('main_address_street');?></span>
                         </div>
                     </div> 
+                    <div class="row">
+                        <div class="col-12">
+                           <span>NIP: </span><span><?php the_field('nip_no'); ?></span>
+                        </div>
+                    </div>
                     <div class="row mt-4">
                         <div class="col-6">
                             <a href="tel:<?php echo str_replace(' ', '', get_field('main_address_phone')); ?>" class="btn btn-primary badge-pill px-3">

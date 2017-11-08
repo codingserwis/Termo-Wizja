@@ -1,6 +1,9 @@
 <h4 class="font-weight-light">
     <span><?php the_field('addres_city'); ?></span> <span>ul. <?php the_field('address_street'); ?></span>
 </h4>
+<h6 class="font-weight-light">
+    <span>NIP: </span><span><?php the_field('nip_no'); ?></span>
+</h6>
 <ul class="mt-3">
     <li>
         <a href="tel:<?php echo str_replace(' ', '', get_field('address_phone')); ?>">
