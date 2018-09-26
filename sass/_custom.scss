@@ -297,6 +297,11 @@ section {
         @extend %section-bcg-right;
     }
 
+    &.ental-bcg {
+        background-image: url('../img/light-mes.png');
+        @extend %section-bcg-left;
+    }
+
     &.contact {
         padding-top: 4rem;
         padding-bottom: 2rem;
