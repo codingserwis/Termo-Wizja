@@ -1,6 +1,7 @@
 <?php 
 /**
  * Template name: Home page
+ * 
  */
     get_header();
 
@@ -180,6 +181,40 @@
             </div>
         </div>
     </section> <!-- end of alarms section -->
+    <section class="rental-bcg section-border">
+        <div class="container">
+            <div class="row rwd-margin justify-content-sm-end">
+                <div class="col-12 col-sm-10 col-md-8 col-xl-7">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="section-main-title font-weight-light">
+                                <?php the_field('rental_title'); ?>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="my-4 section-content">
+                                <?php the_field('rental_content'); ?>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="section-link font-weight-light">
+                                <?php the_field('rental_link'); ?>
+                            </h2>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center justify-content-sm-end">
+                            <a href="<?php echo bloginfo('url') . '/wypozyczalnia/'; ?>" class="btn btn-outline-primary badge-pill px-4 text-orange mt-3">
+                                <span>Sprawdź</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  <!-- /rental section -->
 </main>
 
 <?php 
