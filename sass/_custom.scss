@@ -302,6 +302,14 @@ section {
         @extend %section-bcg-left;
     }
 
+    &.rental-bcg {
+        background-image: url('../img/lawn-mower.png');
+        @extend%section-bcg-left;
+        background-size: 55%;
+        background-position-x: -9rem;
+        background-position-y: -1rem;
+    }
+
     &.contact {
         padding-top: 4rem;
         padding-bottom: 2rem;
