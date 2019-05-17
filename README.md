@@ -1,3 +1,5 @@
 # Termo-Wizja
 
-`Test`
+```javascript
+npm install
+```
